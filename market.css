@@ -1,21 +1,61 @@
+/* market.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 h1 {
+    color: #333;
+    margin-top: 50px;
     text-align: center;
 }
 
 #txt_welcome {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
     text-align: center;
     margin-bottom: 50px;
+}
+
+#txt_welcome a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .card_container {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
     float: left;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card_img {
@@ -26,10 +66,31 @@ h1 {
 .card_title {
     font-size: 20px;
     font-weight: 700;
+    margin: 15px 0;
+    color: #007BFF;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 .card_button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
     font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
     width: 150px;
     height: 40px;
+    transition: background-color 0.2s;
+}
+
+.card_button:hover {
+    background-color: #0056b3;
 }
